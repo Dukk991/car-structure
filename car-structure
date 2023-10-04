@@ -1,0 +1,34 @@
+/*
+1. Kirjoita ohjelma, -jossa on tietue nimeltään Car, jossa seuraavat kentät:
+• brand CHAR(20)
+• model CHAR(50)
+• yearModel INT
+*/
+
+#include <stdio.h>
+
+ struct Car {
+    char brand[20];
+    char model[50];
+    int yearModel;
+};
+
+int main() {
+    
+    struct Car car_1;
+    
+    printf("Brand: \n");
+    scanf("%s", car_1.brand);
+    
+    printf("Model: \n");
+    scanf("%s", car_1.model);
+    
+    printf("Yearmodel: \n");
+    scanf("%d", &car_1.yearModel);
+    
+    printf("Car brand is %s\n", car_1.brand);
+    printf("Car model is %s\n", car_1.model);
+    printf("Car yearmodel is %d\n", car_1.yearModel);
+    
+    return 0;
+}
